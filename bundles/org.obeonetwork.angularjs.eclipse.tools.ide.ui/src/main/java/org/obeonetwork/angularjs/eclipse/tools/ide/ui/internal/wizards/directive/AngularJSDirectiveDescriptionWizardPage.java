@@ -83,7 +83,7 @@ public class AngularJSDirectiveDescriptionWizardPage extends AbstractAngularJSDe
 	}
 
 	public String getServiceFileContent() {
-		final String ls = System.lineSeparator();
+		final String ls = System.getProperty("line.separator");
 
 		StringBuilder stringBuilder = new StringBuilder();
 		if (this.shouldGenerateCommentLicenseAndCopyrightHeader()) {

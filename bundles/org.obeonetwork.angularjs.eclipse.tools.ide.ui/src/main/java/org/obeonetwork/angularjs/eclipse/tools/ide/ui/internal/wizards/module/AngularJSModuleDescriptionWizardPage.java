@@ -87,7 +87,7 @@ public class AngularJSModuleDescriptionWizardPage extends AbstractAngularJSDescr
 	}
 
 	public String getModuleFileContent() {
-		final String ls = System.lineSeparator();
+		final String ls = System.getProperty("line.separator");
 
 		StringBuilder stringBuilder = new StringBuilder();
 		if (this.shouldGenerateCommentLicenseAndCopyrightHeader()) {

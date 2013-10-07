@@ -72,7 +72,7 @@ public class AngularJSProject {
 				IFolder viewsFolder = appFolder.getFolder("views"); //$NON-NLS-1$
 				viewsFolder.create(true, false, monitor);
 
-				String lineSeparator = System.lineSeparator();
+				String lineSeparator = System.getProperty("line.separator");
 
 				String appJsContent = this.createApplication("angularJsEclipseTools", Lists //$NON-NLS-1$
 						.newArrayList(new AngularJSRouteMapping("/:path", "views/main.html", //$NON-NLS-1$ //$NON-NLS-2$
